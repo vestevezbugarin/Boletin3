@@ -15,7 +15,7 @@ public class Boletin3 {
 
         //B
         consumo1.setLitros(50f);
-        consumo1.setpGas(1.57f);
+        consumo1.setPrecioCombustible(1.57f);
 
         //C
         Consumo consumo2 = new Consumo(50f, 5f, 100f, 1.39f, 1f);
@@ -31,7 +31,7 @@ public class Boletin3 {
         System.out.println("O consumo en Euro agora é: " + consumo2.consumoEuros() + " €");
 
         //F
-        System.out.println("A velocidade media foi: " + consumo2.getvMed() + " Km/h");
+        System.out.println("A velocidade media foi: " + consumo2.getVelocidadeMedia() + " Km/h");
         System.out.println("A velocidade media foi: " + consumo2.velocidadeMedia() + " Km/h");
 
     }

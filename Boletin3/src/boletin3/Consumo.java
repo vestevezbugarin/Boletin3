@@ -4,8 +4,8 @@ public class Consumo {
 
     private float km;       //kilómetros percorridos polo coche
     private float litros;   //Litros de combustible consumidos
-    private float vMed;     //velocidade media
-    private float pGas;     //Prezo da gasolina
+    private float velocidadeMedia;     //velocidade media
+    private float precioCombustible;     //Prezo da gasolina
     private float tempo;     //tempo percorrido
 
     public Consumo() {
@@ -14,8 +14,8 @@ public class Consumo {
     public Consumo(float km, float litros, float vMed, float pGas, float tempo) {
         this.km = km;
         this.litros = litros;
-        this.vMed = vMed;
-        this.pGas = pGas;
+        this.velocidadeMedia = vMed;
+        this.precioCombustible = pGas;
         this.tempo = tempo;
     }
     //Getters & setters
@@ -36,20 +36,20 @@ public class Consumo {
         this.litros = litros;
     }
 
-    public float getvMed() {
-        return vMed;
+    public float getVelocidadeMedia() {
+        return velocidadeMedia;
     }
 
-    public void setvMed(float vMed) {
-        this.vMed = vMed;
+    public void setVelocidadeMedia(float velocidadeMedia) {
+        this.velocidadeMedia = velocidadeMedia;
     }
 
-    public float getpGas() {
-        return pGas;
+    public float getPrecioCombustible() {
+        return precioCombustible;
     }
 
-    public void setpGas(float pGas) {
-        this.pGas = pGas;
+    public void setPrecioCombustible(float precioCombustible) {
+        this.precioCombustible = precioCombustible;
     }
 
     public float getTempo() {
@@ -68,7 +68,7 @@ public class Consumo {
     }
 
     public float consumoEuros() {
-        float gasto = consumoMedio() * pGas;
+        float gasto = consumoMedio() * precioCombustible;
         return gasto;
     }
 
